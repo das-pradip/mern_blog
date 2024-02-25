@@ -17,7 +17,8 @@ export default function Header() {
             <TextInput 
             type="text"
             placeholder="search..."
-            rightIcon={AiOutlineSearch}
+            rightIcon={AiOutlineSearch}  
+            //  AiOutlineSearch create search icon inside the text input 
             className="hidden lg:inline"
             />         
         </form>
@@ -35,7 +36,8 @@ export default function Header() {
                     Sign In
                 </Button>
             </Link>  
-            
+
+            {/* Navbar.Toggle creates the hamsberger or 3 dot line */}
             <Navbar.Toggle />
                 
         </div>
