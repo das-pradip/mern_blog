@@ -3,6 +3,8 @@ import bcryptjs from "bcryptjs";
 import {errorHandler} from "../utils/error.js"
 import  jwt  from "jsonwebtoken";
 
+// signup page api route
+
 export const signup = async(req, res, next) => {
    const { username, email, password } = req.body;
 
@@ -30,6 +32,8 @@ export const signup = async(req, res, next) => {
       next(error);
    } 
 };
+
+// signin page api route
 
 export const signin =async (req, res, next) => {
    const { email, password} = req.body;
