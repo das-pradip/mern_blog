@@ -36,11 +36,11 @@ export const getposts = async (req, res, next) => {
       ...(req.query.category && { category: req.query.category }),
       ...(req.query.slug && { slug: req.query.slug }),
       ...(req.query.postId && { _id: req.query.postId }),
-      ...(req.query.seachTerm && 
+      ...(req.query.searchTerm && 
         {
           $or: [
-            { title: { $regex: req.query.seachTerm, $options: 'i'}},
-            { content: { $regex: req.query.seachTerm, $options: 'i'}},
+            { title: { $regex: req.query.searchTerm, $options: 'i'}},
+            { content: { $regex: req.query.searchTerm, $options: 'i'}},
           ],
         }),
     }).sort({ updateAt: sortDirection }).skip(startIndex).limit(limit);
