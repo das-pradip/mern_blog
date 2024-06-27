@@ -72,7 +72,6 @@ export default function Header() {
         </form>
             {/* Button tag comes from flowbite react */}
         <Button className="w-22 h-10 lg:hidden" color="gray" pill >
-          Search...
           <AiOutlineSearch />
         </Button >
         <div className="flex gap-2 md:order-2">
