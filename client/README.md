@@ -6,6 +6,14 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
 - The **frontend** is built with **Vite** (hence `npm run dev` starts the Vite dev server).
@@ -90,13 +98,13 @@ mern_blog/
      ```
      MONGODB_URI=your_mongo_uri
      JWT_SECRET=your_jwt_secret
-     PORT=5000
+     PORT=3000
      ```
 
    - In `/client/.env` (optional for Vite):
 
      ```
-     VITE_API_BASE_URL=http://localhost:5000
+     VITE_API_BASE_URL=http://localhost:3000
      ```
 
 ---
@@ -109,7 +117,7 @@ mern_blog/
 npm run dev
 ```
 
-Runs the Express server with `nodemon` at [http://localhost:5000](http://localhost:5000)
+Runs the Express server with `nodemon` at [http://localhost:5000](http://localhost:3000)
 
 ---
 
@@ -155,4 +163,3 @@ To serve the frontend with the backend, make sure your Express app is configured
 5. Create a new Pull Request
 
 ---
-
